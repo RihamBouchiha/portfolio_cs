@@ -9,7 +9,10 @@ function App() {
           <li><a href="#home" className="nav-link">Home</a></li>
           <li><a href="#about" className="nav-link">About</a></li>
           <li><a href="#skills" className="nav-link">Skills</a></li>
+          <li><a href="#qualification" className='nav-link'>Qualification</a></li>
           <li><a href="#portfolio" className="nav-link">Portfolio</a></li>
+          <li><a href="#certifications" className='nav-link'>Certifications</a></li>
+          <li><a href='#experiences' className='nav-link'>Experiences</a></li>
           <li><a href="#contact" className="nav-link">Contact</a></li>
         </ul>
       </nav>
@@ -30,9 +33,24 @@ function App() {
           <p>Compétences techniques...</p>
         </section>
 
+        <section id="qualification" className="section">
+          <h1>qualification</h1>
+          <p>Compétences techniques...</p>
+        </section>
+
         <section id="portfolio" className="section">
           <h1>Portfolio</h1>
           <p>Mes projets réalisés...</p>
+        </section>
+
+        <section id="certifications" className="section">
+          <h1>certifications</h1>
+          <p>Compétences techniques...</p>
+        </section>
+
+        <section id="experiences" className="section">
+          <h1>experiences</h1>
+          <p>Compétences techniques...</p>
         </section>
 
         <section id="contact" className="section">
