@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css'; // Pour le style global
 
+
 function App() {
   return (
     <>
@@ -18,10 +19,23 @@ function App() {
       </nav>
 
       <main className="main-content">
-        <section id="home" className="section">
-          <h1>Home</h1>
-          <p>Bienvenue sur mon portfolio</p>
-        </section>
+        <section id="home" className="section home-section">
+  <div className="home-content">
+    <div className="photo-area">
+<img src="/imgs/rhm.png" alt="Photo de Riham Bouchiha" />
+    </div>
+    <div className="text-area">
+      <h1>Riham Bouchiha</h1>
+      <hr className="separator" />
+      <h3>Software Engineering Student</h3>
+      <p>
+        Je suis passionnée par le développement logiciel et je cherche à
+        créer des applications performantes et modernes. Bienvenue sur mon portfolio !
+      </p>
+    </div>
+  </div>
+</section>
+
 
         <section id="about" className="section">
           <h1>About</h1>
