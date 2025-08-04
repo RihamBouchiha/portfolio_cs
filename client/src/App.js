@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css'; // Pour le style global
+import rhmImg from './imgs/rhm.png';
 
 
 function App() {
@@ -21,9 +22,10 @@ function App() {
       <main className="main-content">
         <section id="home" className="section home-section">
   <div className="home-content">
-    <div className="photo-area">
-<img src="/imgs/rhm.png" alt="Photo de Riham Bouchiha" />
-    </div>
+    <div className="home-photo-wrapper">
+  <img src={rhmImg} alt="Photo de Riham Bouchiha" className="home-photo" />
+</div>
+
     <div className="text-area">
       <h1>Riham Bouchiha</h1>
       <hr className="separator" />
