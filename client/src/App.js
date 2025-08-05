@@ -3,6 +3,7 @@ import './App.css'; // Pour le style global
 import rhmImg from './imgs/rhm.png';
 
 
+
 function App() {
   return (
     <>
@@ -23,8 +24,8 @@ function App() {
         <section id="home" className="section home-section">
   <div className="home-content">
     <div className="home-photo-wrapper">
-  <img src={rhmImg} alt="Photo de Riham Bouchiha" className="home-photo" />
-</div>
+      <img src={rhmImg} alt="Photo de Riham Bouchiha" className="home-photo" />
+    </div>
 
     <div className="text-area">
       <h1>Riham Bouchiha</h1>
@@ -34,9 +35,13 @@ function App() {
         Je suis passionnée par le développement logiciel et je cherche à
         créer des applications performantes et modernes. Bienvenue sur mon portfolio !
       </p>
+      <button className="btn-say-hello" onClick={() => window.location.href = '#contact'}>
+        Say Hello
+      </button>
     </div>
   </div>
 </section>
+
 
 
         <section id="about" className="section">

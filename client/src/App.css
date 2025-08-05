@@ -6,21 +6,22 @@
 }
 
 html {
-  scroll-behavior: smooth; /* scroll fluide */
+  scroll-behavior: smooth;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* --- Palette générale --- */
 body {
-  background-color: #f5f5f7;
-  color: #222;
+  background-color: #FFFFFF; /* Fond blanc */
+  color: #1E1E1E;            /* Texte noir profond */
 }
 
-/* Navbar fixe en haut */
+/* Navbar */
 .navbar {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #fff;
+  background-color: #FFFFFF;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   z-index: 1000;
 }
@@ -35,44 +36,44 @@ body {
 
 .nav-link {
   text-decoration: none;
-  color: #333;
+  color: #1E1E1E;
   font-weight: 600;
   font-size: 1.1rem;
   transition: color 0.3s ease;
 }
 
 .nav-link:hover {
-  color: #007bff;
+  color: #D46A6A; /* rose chaud */
 }
 
-/* Contenu principal avec padding top pour éviter d'être sous la navbar */
+/* Contenu principal */
 .main-content {
   padding-top: 70px;
   max-width: 960px;
   margin: 0 auto;
 }
 
-/* Chaque section prend toute la hauteur de la fenêtre */
+/* Sections */
 .section {
   min-height: 100vh;
   padding: 4rem 1rem;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #eee;
 }
 
-/* Titres */
 .section h1 {
   margin-bottom: 1rem;
   font-size: 2.5rem;
-  color: #007bff;
+  color: #D46A6A; /* rose chaud */
 }
 
-/* Paragraphes */
 .section p {
   font-size: 1.2rem;
   line-height: 1.6;
   max-width: 700px;
+  color: #555555; /* gris foncé */
 }
 
+/* Section Home */
 .home-section {
   display: flex;
   align-items: center;
@@ -98,52 +99,47 @@ body {
 .text-area h1 {
   font-size: 3rem;
   margin-bottom: 0.5rem;
-  color: #007bff;
+  color: #D46A6A;
 }
 
 .separator {
   width: 60px;
   height: 4px;
-  background-color: #007bff;
+  background-color: #D46A6A;
   border: none;
   margin: 0.5rem 0 1rem 0;
 }
 
 .text-area h3 {
   font-weight: 500;
-  color: #444;
+  color: #555555;
   margin-bottom: 1.5rem;
 }
 
 .text-area p {
   font-size: 1.1rem;
   line-height: 1.6;
-  color: #333;
+  color: #555555;
   max-width: 480px;
 }
 
-.photo-area {
-  flex: 1 1 300px;
-  display: flex;
-  justify-content: center;
-}
-
-.photo-area img {
-  max-width: 280px;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-}
-
+/* --- Photo effet moderne --- */
 .home-photo-wrapper {
   position: relative;
   width: 280px;
   height: 280px;
-  border-radius: 50%;          /* Cercle parfait */
-  padding: 5px;                /* Espace pour le contour */
-  background: linear-gradient(45deg, #007bff, #00d4ff);
-  box-shadow: 0 0 15px rgba(0, 123, 255, 0.6);
-  transition: transform 0.3s ease;
-  cursor: pointer;
+  border-radius: 50%;
+  padding: 6px;
+  background: linear-gradient(
+    45deg,
+    #a13232,  /* rose chaud */
+    #c96868,  /* un peu plus foncé */
+    #e0b2b2   /* gris foncé */
+  );
+  background-size: 200% 200%;
+  animation: borderGradient 6s ease infinite;
+  box-shadow: 0 0 25px rgba(212, 106, 106, 0.6);
+  transition: transform 0.4s ease;
   overflow: hidden;
 }
 
@@ -154,13 +150,36 @@ body {
 .home-photo {
   width: 100%;
   height: 100%;
-  object-fit: cover;           /* L’image remplit le cercle sans déformation */
-  border-radius: 50%;          /* Image ronde */
-  display: block;
-  filter: drop-shadow(0 0 5px rgba(0,0,0,0.15));
-  transition: filter 0.3s ease;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #F8F8F8; /* bord blanc cassé */
 }
 
-.home-photo-wrapper:hover .home-photo {
-  filter: drop-shadow(0 0 10px rgba(0,123,255,0.8));
+/* Animation dégradé */
+@keyframes borderGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
+
+.btn-say-hello {
+  margin-top: 1.5rem;
+  padding: 0.75rem 2rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: white;
+  background: linear-gradient(90deg, #a13232, #a13232);
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s ease, box-shadow 0.2s ease;
+  box-shadow: 0 5px 15px #a13232;
+  display: inline-block;
+}
+
+.btn-say-hello:hover {
+  background: linear-gradient(90deg, #c96868, #a13232);
+  box-shadow: 0 8px 20px #a13232;
+}
+
+
