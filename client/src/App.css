@@ -126,15 +126,15 @@ body {
 /* --- Photo effet moderne --- */
 .home-photo-wrapper {
   position: relative;
-  width: 280px;
-  height: 280px;
+  width: 380px;
+  height: 380px;
   border-radius: 50%;
-  padding: 6px;
+  padding: 15px;
   background: linear-gradient(
     45deg,
-    #a13232,  /* rose chaud */
-    #c96868,  /* un peu plus foncé */
-    #e0b2b2   /* gris foncé */
+    #e19e9e,  /* rose chaud */
+    #a13232,  /* un peu plus foncé */
+    #000000   /* gris foncé */
   );
   background-size: 200% 200%;
   animation: borderGradient 6s ease infinite;
@@ -165,8 +165,8 @@ body {
 .btn-say-hello {
   margin-top: 1.5rem;
   padding: 0.75rem 2rem;
-  font-size: 1.2rem;
-  font-weight: 600;
+  font-size: 1.5rem;
+  font-weight: 10;
   color: white;
   background: linear-gradient(90deg, #a13232, #a13232);
   border: none;
@@ -181,5 +181,313 @@ body {
   background: linear-gradient(90deg, #c96868, #a13232);
   box-shadow: 0 8px 20px #a13232;
 }
+
+.home-content {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.text-area {
+  max-width: 400px;
+}
+
+.social-icons-vertical {
+  display: flex;
+  flex-direction: column; /* Icônes en colonne */
+  gap: 35px;
+  margin-left: 15px; /* Petite marge par rapport au texte */
+}
+
+.social-icons-vertical a {
+  color: #333;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.social-icons-vertical a:hover {
+  transform: scale(1.2);
+}
+
+.social-icons-vertical a:nth-child(1):hover {
+  color: #000; /* GitHub noir */
+}
+
+.social-icons-vertical a:nth-child(2):hover {
+  color: #a13232; /* LinkedIn bleu */
+}
+
+.about-title {
+  text-align: center;
+  font-size: 2.8rem;
+  color: #D46A6A;
+  margin-bottom: 2rem;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.about-text {
+  flex: 1 1 50%;
+}
+
+.about-text h2 {
+  color: #a13232;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.about-text p {
+  color: #555;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.about-photo-wrapper {
+  flex: 1 1 40%;
+  display: flex;
+  justify-content: center;
+}
+
+.about-photo {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #F8F8F8;
+  box-shadow: 0 0 20px rgba(212, 106, 106, 0.4);
+}
+
+.about-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2.5rem;
+  font-weight: bold;
+  color: #222;
+}
+
+.about-container {
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-photo-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.about-photo {
+  width: 320px;
+  height: 320px;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0 15px 25px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease-in-out;
+}
+
+.about-photo:hover {
+  transform: scale(1.05);
+}
+
+.about-details {
+  flex: 2;
+  min-width: 300px;
+}
+
+.about-cards {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.about-card {
+  flex: 1;
+  background: white;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-5px);
+}
+
+.card-title {
+  display: block;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+  color: #444;
+}
+
+.about-text {
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+.about-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn-cv {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: white;
+  padding: 0.9rem 1.6rem;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-cv:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(37,117,252,0.3);
+}
+
+
+.about-title {
+  text-align: center;
+  font-size: 2.8rem;
+  color: #D46A6A; /* rose chaud cohérent avec home */
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+
+.about-container {
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.about-photo-wrapper {
+  flex: 1 1 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.about-photo {
+  width: 320px;
+  height: 320px;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0 15px 25px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease-in-out;
+  border: 4px solid #F8F8F8;
+}
+
+.about-photo:hover {
+  transform: scale(1.05);
+}
+
+.about-details {
+  flex: 1 2 500px;
+  min-width: 300px;
+}
+
+.about-cards {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.about-card {
+  flex: 1 1 100px;
+  background: white;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+  cursor: default;
+}
+
+.about-card:hover {
+  transform: translateY(-5px);
+}
+
+.card-title {
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: 0.3rem;
+  color: #a13232; /* un ton proche rose chaud */
+}
+
+.about-text {
+  color: #555;
+  line-height: 1.8;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.about-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn-cv {
+  background: linear-gradient(135deg, #a13232,#8c0d0d);
+  color: white;
+  padding: 1.5rem 2.8rem;
+  border-radius: 15px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: inline-block;
+}
+
+.btn-cv:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px #a13232;
+}
+
+/* Conteneur flex principal pour bien répartir photo + détails */
+.about-content {
+  display: flex;
+  max-width: 900px; /* même max-width que home-content */
+  width: 100%;
+  gap: 3rem;       /* espace entre photo et texte */
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap; /* pour responsive */
+  margin: 0 auto;  /* centrer horizontalement */
+}
+
+/* Photo garde son style (comme dans ton code existant) */
+.about-photo-wrapper {
+  flex: 1 1 300px; /* prend environ 1/3 */
+  display: flex;
+  justify-content: center;
+}
+
+/* Texte + cartes + boutons dans about-details */
+.about-details {
+  flex: 2 1 500px; /* prend environ 2/3 */
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Garde ton style texte, cartes, boutons inchangé */
 
 
