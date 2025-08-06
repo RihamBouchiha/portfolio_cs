@@ -3,6 +3,7 @@ import './App.css';
 import rhmImg from './imgs/rhm.png';
 import { FaGithub, FaLinkedin, FaTelegramPlane } from 'react-icons/fa';
 
+
 function App() {
   return (
     <>
@@ -12,7 +13,7 @@ function App() {
           <li><a href="#home" className="nav-link">Home</a></li>
           <li><a href="#about" className="nav-link">About</a></li>
           <li><a href="#skills" className="nav-link">Skills</a></li>
-          <li><a href="#qualification" className='nav-link'>Qualification</a></li>
+          <li><a href="#education" className='nav-link'>Education</a></li>
           <li><a href="#portfolio" className="nav-link">Portfolio</a></li>
           <li><a href="#certifications" className='nav-link'>Certifications</a></li>
           <li><a href='#experiences' className='nav-link'>Experiences</a></li>
@@ -94,11 +95,168 @@ function App() {
           </div>
         </section>
 
+<section id="skills" className="section skills-section">
+  <h1 className="section-title">Skills</h1>
+  <h2 className="skills-subtitle">Technologies I Master</h2>
 
-        <section id="skills" className="section">
-          <h1>Skills</h1>
-          <p>Compétences techniques...</p>
-        </section>
+  <div className="skills-container">
+    {/* 1. Programming Languages */}
+    <div className="skills-column">
+      <h3>Programming Languages</h3>
+      <div className="skills-icons">
+        <div className="skill"><i className="devicon-c-plain colored"></i><span>C</span></div>
+        <div className="skill"><i className="devicon-cplusplus-plain colored"></i><span>C++</span></div>
+        <div className="skill"><i className="devicon-csharp-plain colored"></i><span>C#</span></div>
+        <div className="skill"><i className="devicon-java-plain colored"></i><span>Java</span></div>
+        <div className="skill"><i className="devicon-javascript-plain colored"></i><span>JavaScript</span></div>
+      </div>
+    </div>
+
+    {/* 2. Frameworks & Libraries */}
+    <div className="skills-column">
+      <h3>Frameworks & Libraries</h3>
+      <div className="skills-icons">
+        <div className="skill"><i className="devicon-react-original colored"></i><span>React</span></div>
+        <div className="skill"><i className="devicon-nodejs-plain colored"></i><span>Node.js</span></div>
+        <div className="skill"><i className="devicon-express-original colored"></i><span>Express.js</span></div>
+        <div className="skill"><i className="devicon-django-plain colored"></i><span>Django</span></div>
+        <div className="skill"><i className="devicon-bootstrap-plain colored"></i><span>Bootstrap</span></div>
+      </div>
+    </div>
+
+    {/* 3. Databases */}
+    <div className="skills-column">
+      <h3>Databases</h3>
+      <div className="skills-icons">
+        <div className="skill"><i className="devicon-postgresql-plain colored"></i><span>PostgreSQL</span></div>
+        <div className="skill"><i className="devicon-mysql-plain colored"></i><span>MySQL</span></div>
+        <div className="skill"><i className="devicon-mongodb-plain colored"></i><span>MongoDB</span></div>
+        <div className="skill"><i className="devicon-sqlite-plain colored"></i><span>SQLite</span></div>
+      </div>
+    </div>
+
+    {/* 4. Tools & Technologies */}
+    <div className="skills-column">
+      <h3>Tools & Technologies</h3>
+      <div className="skills-icons">
+        <div className="skill"><i className="devicon-git-plain colored"></i><span>Git</span></div>
+        <div className="skill"><i className="devicon-docker-plain colored"></i><span>Docker</span></div>
+        <div className="skill"><i className="devicon-figma-plain colored"></i><span>Figma</span></div>
+        <div className="skill"><i className="devicon-postman-plain colored"></i><span>Postman</span></div>
+        <div className="skill"><i className="devicon-jira-plain colored"></i><span>Jira</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="education" className="section education-section">
+  <h1 className="section-title">Education</h1>
+  <div className="education-timeline">
+    <div className="timeline-item left">
+      <div className="timeline-content">
+        <h3 className="timeline-degree">Lycée Abi Abbass Sebti</h3>
+        <p className="timeline-institution">High School Diploma</p>
+        <span className="timeline-duration">2013 – 2016</span>
+      </div>
+    </div>
+
+    <div className="timeline-item right">
+      <div className="timeline-content">
+        <h3 className="timeline-degree">Faculté de Médecine Strasbourg</h3>
+        <p className="timeline-institution">Medical Studies</p>
+        <span className="timeline-duration">2016 – 2019</span>
+      </div>
+    </div>
+
+    <div className="timeline-item left">
+      <div className="timeline-content">
+        <h3 className="timeline-degree">EST Fès</h3>
+        <p className="timeline-institution">Engineering Studies</p>
+        <span className="timeline-duration">2019 – 2021</span>
+      </div>
+    </div>
+
+    <div className="timeline-item right">
+      <div className="timeline-content">
+        <h3 className="timeline-degree">ENIAD</h3>
+        <p className="timeline-institution">Specialized Training</p>
+        <span className="timeline-duration">2021 – Present</span>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="portfolio" className="section portfolio-section">
+  <h1 className="section-title">Portfolio</h1>
+  <h2 className="section-subtitle">My Recent Work</h2>
+
+  <div className="portfolio-container">
+    {/* Projet 1 */}
+    <div className="portfolio-card">
+      <img src="/projects/project1.jpg" alt="Project 1" className="portfolio-image" />
+      <h3 className="portfolio-title">Project Name</h3>
+      <a href="https://lien-vers-plus.com" target="_blank" rel="noopener noreferrer" className="portfolio-link">
+        En savoir plus →
+      </a>
+    </div>
+
+    {/* Projet 2 */}
+    <div className="portfolio-card">
+      <img src="/projects/project2.jpg" alt="Project 2" className="portfolio-image" />
+      <h3 className="portfolio-title">Another Project</h3>
+      <a href="https://lien-vers-plus.com" target="_blank" rel="noopener noreferrer" className="portfolio-link">
+        En savoir plus →
+      </a>
+    </div>
+
+    {/* Ajoute autant de projets que tu veux */}
+  </div>
+</section>
+
+<section id="certifications" className="section certifications-section">
+  <h1 className="section-title">Certifications</h1>
+  <h2 className="section-subtitle">Mes Réalisations Certifiées</h2>
+
+  <div className="certifications-container">
+    {/* Certification 1 */}
+    <div className="certification-card">
+      <img src="/certifications/cert1.jpg" alt="Certification 1" className="certification-image" />
+      <div className="certification-content">
+        <h3>JavaScript Algorithms and Data Structures</h3>
+        <p>freeCodeCamp</p>
+        <a href="https://www.freecodecamp.org/certification/tonlien" target="_blank" rel="noopener noreferrer" className="certification-link">
+          Voir le certificat →
+        </a>
+      </div>
+    </div>
+
+    {/* Certification 2 */}
+    <div className="certification-card">
+      <img src="/certifications/cert2.jpg" alt="Certification 2" className="certification-image" />
+      <div className="certification-content">
+        <h3>React - The Complete Guide</h3>
+        <p>Udemy</p>
+        <a href="https://www.udemy.com/certificate/tonlien" target="_blank" rel="noopener noreferrer" className="certification-link">
+          Voir le certificat →
+        </a>
+      </div>
+    </div>
+
+    {/* Certification 3 */}
+    <div className="certification-card">
+      <img src="/certifications/cert3.jpg" alt="Certification 3" className="certification-image" />
+      <div className="certification-content">
+        <h3>Node.js and Express</h3>
+        <p>Coursera</p>
+        <a href="https://coursera.org/certificate/tonlien" target="_blank" rel="noopener noreferrer" className="certification-link">
+          Voir le certificat →
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
 
         {/* ... Autres sections comme qualification, portfolio, etc. */}
 
