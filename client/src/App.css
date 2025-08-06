@@ -79,7 +79,7 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .home-content {
@@ -93,14 +93,16 @@ body {
 }
 
 .text-area {
-  flex: 1 1 400px;
+  max-width: 600px; 
+  overflow: visible; 
 }
 
-.text-area h1 {
-  font-size: 3rem;
-  margin-bottom: 0.5rem;
-  color: #D46A6A;
+.text-area h1.typing {
+  white-space: nowrap;
+  overflow: visible;
 }
+
+
 
 .separator {
   width: 60px;
@@ -1345,4 +1347,18 @@ body {
   .contact-form {
     padding: 1.5rem 1.8rem;
   }
+}
+.typing {
+  font-family: monospace;
+  font-size: 2.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.cursor {
+  display: inline-block;
+  font-weight: 100;
+  font-size: 2.5rem;
+  color: #000;
+  margin-left: 3px;
 }
