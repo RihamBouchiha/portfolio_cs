@@ -224,6 +224,17 @@ body {
   color: #D46A6A;
   margin-bottom: 2rem;
 }
+.section-subtitle {
+  display: block;        /* Pour forcer à aller à la ligne */
+  text-align: center;    /* Centrer le texte */
+  font-size: 1.5rem;     /* Taille plus petite qu’un h1 */
+  color: #555;        /* Couleur qui va bien avec le titre */
+  margin-top: 0.5rem;   /* Ajuster l'espacement au besoin */
+  margin-bottom: 2rem;   /* Espace après le sous-titre */
+  font-weight: 450;      /* Style un peu plus léger que le titre */
+  letter-spacing: 0.05em;/* Optionnel : espacement entre les lettres */
+}
+
 
 .about-content {
   display: flex;

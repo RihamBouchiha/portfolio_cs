@@ -92,6 +92,8 @@ function App() {
 
         <section id="about" className="section about-section">
           <h1 className="about-title">About Me</h1>
+          <span className="section-subtitle">Introduction</span>
+
           <div className="about-container">
             <div className="about-photo-wrapper">
               <img src={rhmImg} alt="Riham Bouchiha" className="about-photo" />
