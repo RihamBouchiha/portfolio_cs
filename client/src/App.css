@@ -1079,8 +1079,8 @@ body {
 }
 
 .certifications-section {
-  padding: 50px 20px;
-  background: #f0eded;
+  padding: 60px 10px;
+  background: #fdfdfd;
   color: rgba(0, 0, 0, 0.734);
   text-align: center;
   border-radius: 15px;
@@ -1137,4 +1137,212 @@ body {
 
 .certification-link:hover {
   color: #9e5252;
+}
+
+.section-title {
+  margin-bottom: 1.5rem;
+}
+
+.about-text {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.about-buttons a {
+  margin-right: 1rem; /* espace entre les deux boutons */
+}
+
+.portfolio-card {
+  margin-bottom: 2rem;
+}
+
+.timeline-item {
+  margin-bottom: 2rem;
+}
+
+.btn-cv {
+  padding: 0.6rem 1.2rem;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-cv:hover {
+  background-color: #0056b3;
+}
+
+.portfolio-card, .certification-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  padding: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.portfolio-card:hover, .certification-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+}
+
+.portfolio-image, .certification-image {
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.about-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+/* --- Section Contact --- */
+.contact-section {
+  padding: 4rem 0;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.contact-section .section-title {
+  font-size: 2.5rem;
+  color: #111;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.contact-section .section-subtitle {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 2rem;
+  display: block;
+}
+
+.contact-container {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contact-info {
+  flex: 1 1 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  text-align: left;
+}
+
+.contact-card {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgb(0 0 0 / 0.1);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transition: 0.3s;
+  cursor: default;
+}
+
+.contact-card:hover {
+  box-shadow: 0 6px 20px rgb(0 0 0 / 0.15);
+}
+
+.contact-icon {
+  color: #4e9af1;
+  font-size: 1.8rem;
+  min-width: 36px;
+}
+
+.contact-title {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #222;
+  min-width: 80px;
+}
+
+.contact-data {
+  font-size: 1rem;
+  color: #555;
+  flex: 1;
+}
+
+.contact-form {
+  flex: 1 1 400px;
+  background-color: #fff;
+  padding: 2rem 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgb(0 0 0 / 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contact-input {
+  padding: 0.85rem 1.2rem;
+  border: 1.5px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #333;
+  resize: none;
+  transition: 0.3s;
+}
+
+.contact-input:focus {
+  outline: none;
+  border-color: #4e9af1;
+  box-shadow: 0 0 5px #4e9af1;
+}
+
+.btn-contact {
+  background-color: #4e9af1;
+  color: white;
+  border: none;
+  padding: 1rem 0;
+  font-size: 1.1rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: 600;
+}
+
+.btn-contact:hover {
+  background-color: #3672d9;
+}
+
+/* Footer Socials */
+.contact-footer-socials {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.6rem;
+}
+
+.contact-social-link {
+  color: #4e9af1;
+  font-size: 1.6rem;
+  transition: color 0.3s ease;
+}
+
+.contact-social-link:hover {
+  color: #3672d9;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .contact-container {
+    flex-direction: column;
+  }
+  .contact-info,
+  .contact-form {
+    flex: 1 1 100%;
+  }
+  .contact-form {
+    padding: 1.5rem 1.8rem;
+  }
 }

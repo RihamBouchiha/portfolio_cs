@@ -1,7 +1,19 @@
 import React from 'react';
 import './App.css';
 import rhmImg from './imgs/rhm.png';
-import { FaGithub, FaLinkedin, FaTelegramPlane } from 'react-icons/fa';
+import { 
+  FaGithub, 
+  FaLinkedin, 
+  FaTelegramPlane, 
+  FaMapMarker,   // <-- changer ici
+  FaEnvelope, 
+  FaPhoneAlt, 
+  FaFacebookF, 
+  FaTwitter, 
+  FaLinkedinIn, 
+  FaInstagram 
+} from 'react-icons/fa';
+
 
 
 function App() {
@@ -253,6 +265,90 @@ function App() {
     </div>
   </div>
 </section>
+<section id="experiences" className="qualification-section experience-section">
+  <h2 className="section-title">Expériences</h2>
+  <div className="education-timeline"> {/* même classe que pour éducation */}
+    
+    <div className="timeline-item left"> {/* alterne left / right pour le style */}
+      <div className="timeline-content">
+        <h3 className="timeline-title">Développeur Frontend</h3>
+        <p className="timeline-company">Entreprise XYZ</p>
+        <p className="timeline-duration">Janvier 2023 - Présent</p>
+        <p className="timeline-description">
+          Développement d'applications web modernes en React.
+        </p>
+      </div>
+    </div>
+
+    <div className="timeline-item right">
+      <div className="timeline-content">
+        <h3 className="timeline-title">Stage en développement web</h3>
+        <p className="timeline-company">Agence ABC</p>
+        <p className="timeline-duration">Juin 2022 - Décembre 2022</p>
+        <p className="timeline-description">
+          Participation à la refonte du site vitrine.
+        </p>
+      </div>
+    </div>
+
+    {/* Ajoute autant d'items que nécessaire en alternant left et right */}
+    
+  </div>
+</section>
+<section id="contact" className="section contact-section">
+  <h2 className="section-title">Contact</h2>
+  <span className="section-subtitle">Get in touch</span>
+
+  <div className="contact-container">
+    {/* Contact info */}
+    <div className="contact-info">
+      <div className="contact-card">
+  <FaMapMarker className="contact-icon" />  {/* <-- corrigé ici */}
+  <h3 className="contact-title">Address</h3>
+  <span className="contact-data">Rabat, Morocco</span>
+</div>
+
+
+      <div className="contact-card">
+        <FaEnvelope className="contact-icon" />
+        <h3 className="contact-title">Email</h3>
+        <span className="contact-data">riham@example.com</span>
+      </div>
+
+      <div className="contact-card">
+        <FaPhoneAlt className="contact-icon" />
+        <h3 className="contact-title">Phone</h3>
+        <span className="contact-data">+212 600 000 000</span>
+      </div>
+    </div>
+
+    {/* Contact form */}
+    <form className="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required className="contact-input" />
+      <input type="email" name="email" placeholder="Your Email" required className="contact-input" />
+      <textarea name="message" rows="7" placeholder="Your Message" required className="contact-input"></textarea>
+      <button type="submit" className="btn btn-contact">Send Message</button>
+    </form>
+  </div>
+
+  {/* Social icons footer */}
+  <div className="contact-footer-socials">
+    <a href="https://facebook.com/yourprofile" target="_blank" rel="noopener noreferrer" className="contact-social-link">
+      <FaFacebookF />
+    </a>
+    <a href="https://twitter.com/yourprofile" target="_blank" rel="noopener noreferrer" className="contact-social-link">
+      <FaTwitter />
+    </a>
+    <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" className="contact-social-link">
+      <FaLinkedinIn />
+    </a>
+    <a href="https://instagram.com/yourprofile" target="_blank" rel="noopener noreferrer" className="contact-social-link">
+      <FaInstagram />
+    </a>
+  </div>
+</section>
+
+
 
 
 
