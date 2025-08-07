@@ -2,6 +2,9 @@ import React, { useState, useEffect } from 'react';
 
 import './App.css';
 import rhmImg from './imgs/rhm.png';
+import rhm1 from './imgs/rhmImg1.png';
+import rhkHotel from './imgs/rhkHotel.png';
+
 import { 
   FaGithub, 
   FaLinkedin, 
@@ -98,7 +101,7 @@ function App() {
 
           <div className="about-container">
             <div className="about-photo-wrapper">
-              <img src={rhmImg} alt="Riham Bouchiha" className="about-photo" />
+              <img src={rhm1} alt="Riham Bouchiha" className="about-photo" />
             </div>
             <div className="about-details">
              <div className="about-cards">
@@ -133,17 +136,22 @@ function App() {
 
         <section id="skills" className="section skills-section">
           <h1 className="section-title">Skills</h1>
-          <h2 className="section-subtitle">Technologies I Master</h2>     
+          <h2 className="section-subtitle">My Tech Toolbox</h2>     
 
           <div className="skills-container">
             <div className="skills-column">
               <h3>Programming Languages</h3>
               <div className="skills-icons">
                 <div className="skill"><i className="devicon-c-plain colored"></i><span>C</span></div>
+                <div className="skill"><i className="devicon-bash-plain colored"></i><span>Bash</span></div>
                 <div className="skill"><i className="devicon-cplusplus-plain colored"></i><span>C++</span></div>
                 <div className="skill"><i className="devicon-csharp-plain colored"></i><span>C#</span></div>
                 <div className="skill"><i className="devicon-java-plain colored"></i><span>Java</span></div>
                 <div className="skill"><i className="devicon-javascript-plain colored"></i><span>JavaScript</span></div>
+                <div className="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" /><span>Python</span></div>
+                <div className="skill"><i className="devicon-php-plain colored"></i><span>PHP</span></div>
+                <div className="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/r/r-original.svg" /><span>R</span></div>
+                <div className="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matlab/matlab-original.svg" /><span>Matlab</span></div>
               </div>
             </div>
 
@@ -151,10 +159,17 @@ function App() {
               <h3>Frameworks & Libraries</h3>
               <div className="skills-icons">
                 <div className="skill"><i className="devicon-react-original colored"></i><span>React</span></div>
-                <div className="skill"><i className="devicon-nodejs-plain colored"></i><span>Node.js</span></div>
+                <div className="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/reactnative/reactnative-original.svg" /><span>React Native</span></div>                <div className="skill"><i className="devicon-bootstrap-plain colored"></i><span>Bootstrap</span></div>
+                <div className="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" /><span>Node.js</span></div>
                 <div className="skill"><i className="devicon-express-original colored"></i><span>Express.js</span></div>
-                <div className="skill"><i className="devicon-django-plain colored"></i><span>Django</span></div>
-                <div className="skill"><i className="devicon-bootstrap-plain colored"></i><span>Bootstrap</span></div>
+                <div className="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/json/json-original.svg" /><span>JSon</span></div>
+                <div className="skill"><i class="devicon-jquery-plain colored"></i><span>JQuery</span></div>                
+                <div className="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" /><span>Tailwind</span></div>
+                <div className="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/chartjs/chartjs-original.svg" /><span>Chart.js</span></div>
+                <div className="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongoose/mongoose-original.svg" /><span>Mongoose</span></div>
+                <div className="skill"><svg viewBox="0 0 128 128"><path fill="#2d3748" d="M66.457.014a6.308 6.308 0 0 0-5.812 3.028l-47.87 78.072a6.379 6.379 0 0 0 .048 6.748l23.568 37.186a6.387 6.387 0 0 0 7.22 2.683l68.012-20.407a6.37 6.37 0 0 0 3.96-8.765l-43.72-94.85A6.298 6.298 0 0 0 66.46.014Zm1.795 23.95a2.348 2.348 0 0 1 2.448 1.433l30.16 69.784a2.39 2.39 0 0 1-1.512 3.241l-46.996 14.024a2.39 2.39 0 0 1-3.024-2.76l16.83-83.812a2.353 2.353 0 0 1 2.099-1.91z"></path></svg><span>Prisma</span></div>
+                <div className="skill"><img src="https://simpleicons.org/icons/jsonwebtokens.svg" alt="JWT Icon" style={{ width: '24px', height: '24px' }} /><span>JWT</span></div>
+
               </div>
             </div>
 
@@ -164,7 +179,10 @@ function App() {
                 <div className="skill"><i className="devicon-postgresql-plain colored"></i><span>PostgreSQL</span></div>
                 <div className="skill"><i className="devicon-mysql-plain colored"></i><span>MySQL</span></div>
                 <div className="skill"><i className="devicon-mongodb-plain colored"></i><span>MongoDB</span></div>
-                <div className="skill"><i className="devicon-sqlite-plain colored"></i><span>SQLite</span></div>
+                <div className="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original.svg" /><span>SQLite</span></div>
+                <div className="skill"><i class="devicon-mariadb-original colored"></i><span>MariaDb</span></div>
+                <div className="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-original.svg" /><span>Microsoft Sql Server</span></div>
+
               </div>
             </div>
 
@@ -173,9 +191,17 @@ function App() {
               <div className="skills-icons">
                 <div className="skill"><i className="devicon-git-plain colored"></i><span>Git</span></div>
                 <div className="skill"><i className="devicon-docker-plain colored"></i><span>Docker</span></div>
-                <div className="skill"><i className="devicon-figma-plain colored"></i><span>Figma</span></div>
+                <div className="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" /><span>Figma</span></div>
                 <div className="skill"><i className="devicon-postman-plain colored"></i><span>Postman</span></div>
-                <div className="skill"><i className="devicon-jira-plain colored"></i><span>Jira</span></div>
+                <div className="skill"><i className="devicon-apache-line-wordmark"></i><span>Apache</span></div>
+                <div className="skill"><i className="devicon-babel-plain colored"></i><span>Babel</span></div>
+                <div className="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" /><span>Git</span></div>
+                <div className="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" /><span>Linux</span></div>
+                <div className="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-plain.svg" /><span>Postman</span></div>
+                <div className="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/unifiedmodelinglanguage/unifiedmodelinglanguage-original.svg" /><span>UML</span></div>
+
+
+
               </div>
             </div>
           </div>
@@ -183,37 +209,37 @@ function App() {
 
        <section id="education" className="section education-section">
         <h1 className="section-title">Education</h1>
-        <h2 className="section-subtitle">Your subtitle here</h2>
+        <h2 className="section-subtitle">My Academic Journey</h2>
           <div className="education-timeline">
             <div className="timeline-item left">
               <div className="timeline-content">
-                <h3 className="timeline-degree">Lycée Abi Abbass Sebti</h3>
-                <p className="timeline-institution">High School Diploma</p>
-                <span className="timeline-duration">2013 – 2016</span>
+                <h3 className="timeline-degree">Ecole Nationale de l'intelligence artificielle et du digital</h3>
+                <p className="timeline-institution">Software engineering Degree</p>
+                <span className="timeline-duration">2024- Present</span>
               </div>
             </div>
 
             <div className="timeline-item right">
               <div className="timeline-content">
-                <h3 className="timeline-degree">Faculté de Médecine Strasbourg</h3>
-                <p className="timeline-institution">Medical Studies</p>
-                <span className="timeline-duration">2016 – 2019</span>
+                <h3 className="timeline-degree">Ecole Supérieure de Technlogie de Fés</h3>
+                <p className="timeline-institution">DUT-Computer Science Degree</p>
+                <span className="timeline-duration">2022-2024</span>
               </div>
             </div>
 
             <div className="timeline-item left">
               <div className="timeline-content">
-                <h3 className="timeline-degree">EST Fès</h3>
-                <p className="timeline-institution">Engineering Studies</p>
-                <span className="timeline-duration">2019 – 2021</span>
+                <h3 className="timeline-degree">Faculté de médecine Strasbourg FRANCE</h3>
+                <p className="timeline-institution">L1 Sps-Spé Physique</p>
+                <span className="timeline-duration">2021-2022</span>
               </div>
             </div>
 
             <div className="timeline-item right">
               <div className="timeline-content">
-                <h3 className="timeline-degree">ENIAD</h3>
-                <p className="timeline-institution">Specialized Training</p>
-                <span className="timeline-duration">2021 – Present</span>
+                <h3 className="timeline-degree">Lycée Abi Abass Sebti</h3>
+                <p className="timeline-institution">Baccalauriat Sciences Physique</p>
+                <span className="timeline-duration">2020-2021</span>
               </div>
             </div>
           </div>
@@ -223,9 +249,9 @@ function App() {
           <h2 className="section-subtitle">Your subtitle here</h2>
           <div className="portfolio-container">
             <div className="portfolio-card">
-              <img src="/projects/project1.jpg" alt="Project 1" className="portfolio-image" />
-              <h3 className="portfolio-title">Project Name</h3>
-              <a href="https://lien-vers-plus.com" target="_blank" rel="noopener noreferrer" className="portfolio-link">
+              <img src={rhkHotel} alt="Project 2" className="portfolio-image" />
+              <h3 className="portfolio-title">RHK-Hotel</h3>
+              <a href="https://rihambouchiha.github.io/PFE-HOTEL-RHK-Riham/" target="_blank" rel="noopener noreferrer" className="portfolio-link">
                 En savoir plus →
               </a>
             </div>

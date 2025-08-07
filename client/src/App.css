@@ -349,29 +349,6 @@ body {
   line-height: 1.8;
   margin-bottom: 2rem;
 }
-
-.about-buttons {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-
-.btn-cv {
-  background: linear-gradient(135deg, #6a11cb, #2575fc);
-  color: white;
-  padding: 0.9rem 1.6rem;
-  border-radius: 10px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.btn-cv:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 15px rgba(37,117,252,0.3);
-}
-
-
 .about-title {
   text-align: center;
   font-size: 2.8rem;
@@ -453,14 +430,14 @@ body {
 
 .about-buttons {
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
   flex-wrap: wrap;
 }
 
 .btn-cv {
-  background: linear-gradient(135deg, #a13232,#8c0d0d);
+  background: linear-gradient(135deg, #dd4d4d,#8c0d0d);
   color: white;
-  padding: 1.5rem 2.8rem;
+  padding: 1.5rem 1.8rem;
   border-radius: 15px;
   text-decoration: none;
   font-weight: 600;
@@ -470,10 +447,9 @@ body {
 
 .btn-cv:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 15px #a13232;
+  box-shadow: 0 8px 20px #200909;
 }
 
-/* Conteneur flex principal pour bien répartir photo + détails */
 .about-content {
   display: flex;
   max-width: 900px; /* même max-width que home-content */
@@ -770,7 +746,7 @@ body {
 
 .timeline-institution,
 .timeline-company {
-  font-size: 1rem;
+  font-size: 0.5rem;
   color: #555;
 }
 
@@ -841,7 +817,7 @@ body {
 }
 
 .timeline-institution {
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: #555;
 }
 
@@ -879,7 +855,7 @@ body {
   content: "";
   position: absolute;
   width: 4px;
-  background-color: #a13232;
+  background-color: #D46A6A;
   top: 0;
   bottom: 0;
   left: 50%;
@@ -929,14 +905,14 @@ body {
 }
 
 .timeline-degree {
-  font-size: 1.4rem;
-  color: #a13232;
+  font-size: 1.2rem;
+  color: #D46A6A;
   font-weight: 700;
   margin-bottom: 5px;
 }
 
 .timeline-institution {
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   color: #555;
   margin-bottom: 3px;
   font-style: italic;
@@ -978,10 +954,10 @@ body {
 
 .timeline-content {
   background-color: #fff;
-  padding: 15px; /* moins de padding interne */
+  padding: 9px; 
   position: relative;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 10px #33111165;
 }
 
 
@@ -1175,18 +1151,7 @@ body {
   margin-bottom: 2rem;
 }
 
-.btn-cv {
-  padding: 0.6rem 1.2rem;
-  border-radius: 5px;
-  background-color: #007bff;
-  color: white;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-}
 
-.btn-cv:hover {
-  background-color: #0056b3;
-}
 
 .portfolio-card, .certification-card {
   background: white;
@@ -1207,11 +1172,7 @@ body {
   height: auto;
   object-fit: cover;
 }
-.about-buttons {
-  display: flex;
-  gap: 1rem;
-  margin-top: 2rem;
-}
+
 
 /* --- Section Contact --- */
 .contact-section {
