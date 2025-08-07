@@ -251,7 +251,7 @@ function App() {
         </section>
         <section id="portfolio" className="section portfolio-section">
           <h1 className="section-title">Portfolio</h1>
-          <h2 className="section-subtitle">Your subtitle here</h2>
+          <h2 className="section-subtitle">My projects</h2>
           <div className="portfolio-container">
             <div className="portfolio-card">
               <img src={rhkHotel} alt="Project 2" className="portfolio-image" />
