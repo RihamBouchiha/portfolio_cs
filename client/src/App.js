@@ -298,24 +298,24 @@ function App() {
             <div className="certification-card">
               <img src={ess} alt="Project 2" className="portfolio-image" />              
                 <div className="certification-content">
-                  <h3>JavaScript Algorithms and Data Structures</h3>
-                    <p>freeCodeCamp</p>
+                  <h3>Hackathon "orientalHack 1.0"</h3>
+                    <p>ENCG Oujda</p>
                       <a href="/ess.pdf" target="_blank" rel="noopener noreferrer" className="certification-link">Voir le certificat →</a>
                 </div>
             </div>
              <div className="certification-card">
               <img src={ict} alt="Project 2" className="portfolio-image" />              
                 <div className="certification-content">
-                  <h3>JavaScript Algorithms and Data Structures</h3>
-                    <p>freeCodeCamp</p>
+                  <h3>Girl in ICT "Public speech"</h3>
+                    <p>Majal Berkane</p>
                       <a href="/ict.pdf" target="_blank" rel="noopener noreferrer" className="certification-link">Voir le certificat →</a>
                 </div>
             </div>
              <div className="certification-card">
               <img src={esisa} alt="Project 2" className="portfolio-image" />              
                 <div className="certification-content">
-                  <h3>JavaScript Algorithms and Data Structures</h3>
-                    <p>freeCodeCamp</p>
+                  <h3>Esisa Senio developpers Hackathon</h3>
+                    <p>Esisa Fes</p>
                       <a href="/esisa.pdf" target="_blank" rel="noopener noreferrer" className="certification-link">Voir le certificat →</a>
                 </div>
             </div>
@@ -324,29 +324,39 @@ function App() {
           </div>
         </section>   
         <section id="experiences" className="section experience-section">
-          <h1 className="section-title">Expériences</h1>
-          <h2 className="section-subtitle">Your subtitle here</h2>
+          <h1 className="section-title">Experiences</h1>
+          <h2 className="section-subtitle">Professional Journey & Key Experiences</h2>
 
           <div className="education-timeline">
             <div className="timeline-item left">
               <div className="timeline-content">
-                <h3 className="timeline-title">Développeur Frontend</h3>
-                <p className="timeline-company">Entreprise XYZ</p>
-                <p className="timeline-duration">Janvier 2023 - Présent</p>
+                <h3 className="timeline-title">Commune de Tanger</h3>
+                <p className="timeline-duration">July 2025 - August 2025</p>
                 <p className="timeline-description">
-                  Développement d'applications web modernes en React.
+                  Development of a Public Lighting Mobile Application.
                 </p>
               </div>
             </div>
 
             <div className="timeline-item right">
               <div className="timeline-content">
-                <h3 className="timeline-title">Stage en développement web</h3>
-                <p className="timeline-company">Agence ABC</p>
-                <p className="timeline-duration">Juin 2022 - Décembre 2022</p>
-                <p className="timeline-description">
-                  Participation à la refonte du site vitrine.
-                </p>
+                <h3 className="timeline-title">Activ Digital</h3>
+                <p className="timeline-duration">April 2024 - June 2024</p>
+                <p className="timeline-description">Development of a Human Resources Management Application</p>
+              </div>
+            </div>
+            <div className="timeline-item left">
+              <div className="timeline-content">
+                <h3 className="timeline-title">ESTF</h3>
+                <p className="timeline-duration">October 2023 - April 2024</p>
+                <p className="timeline-description">Hotel Reservation Management Platform</p>
+              </div>
+            </div>
+            <div className="timeline-item right">
+              <div className="timeline-content">
+                <h3 className="timeline-title">D3 Soft</h3>
+                <p className="timeline-duration">June 2023 - July 2023</p>
+                <p className="timeline-description">Development of a Payment Management Application</p>
               </div>
             </div>
           </div>

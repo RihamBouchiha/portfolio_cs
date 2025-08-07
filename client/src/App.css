@@ -752,7 +752,7 @@ body {
 
 .timeline-duration {
   font-size: 0.875rem;
-  color: #777;
+  color: #978e8e;
 }
 
 .timeline-description {
@@ -922,6 +922,7 @@ body {
   font-size: 0.9rem;
   color: #777;
 }
+
 
 /* 📱 Responsive */
 @media screen and (max-width: 768px) {
