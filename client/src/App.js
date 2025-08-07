@@ -278,14 +278,6 @@ function App() {
                 See More →
               </a>
             </div>
-            <div className="portfolio-card">
-              <img src={gustoRh} alt="Project 2" className="portfolio-image" />              
-              <h3 className="portfolio-title">Gusto Rh</h3>
-              <h5 className='portfolio-subtitle'>Human Resources Management Web Application</h5>
-              <a href="https://rihambouchiha.github.io/grh/" target="_blank" rel="noopener noreferrer" className="portfolio-link">
-                See More →
-              </a>
-            </div>
           </div>
           
         </section>
