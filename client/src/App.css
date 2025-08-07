@@ -501,17 +501,18 @@ body {
   gap: 1.5rem;
 }
 
+
 /* Garde ton style texte, cartes, boutons inchangé */
 
 .skills-section .section-title {
-  font-size: 2.8rem;
+  font-size: 2.2rem;
   color: #D46A6A;
   text-align: center;
   margin-bottom: 1rem;
 }
 
 .skills-section .skills-subtitle {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: #555;
   text-align: center;
   margin-bottom: 2.5rem;
@@ -533,7 +534,7 @@ body {
 
 .skills-column h3 {
   font-size: 1.4rem;
-  color: #a13232;
+  color: #D46A6A;
   margin-bottom: 1rem;
 }
 
@@ -1373,3 +1374,61 @@ body {
   color: #000;
   margin-left: 3px;
 }
+
+.about-cards {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.about-card {
+  flex: 1;
+  min-width: 150px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 0.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.about-icon {
+  font-size: 1.2rem;
+  color: #D46A6A;
+  margin-bottom: 0.5rem;
+}
+
+.card-title {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+.section .section-title {
+  font-size: 2.2rem;
+  color: #D46A6A;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.section .section-subtitle {
+  font-size: 1.2rem;
+  color: #555;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.section .section-title {
+  font-size: 2.1rem;
+  color: #D46A6A;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.section .section-subtitle {
+  font-size: 1.0rem;
+  color: #555;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+

@@ -14,6 +14,8 @@ import {
   FaLinkedinIn, 
   FaInstagram 
 } from 'react-icons/fa';
+import { FaAward, FaBriefcase, FaHeadset } from 'react-icons/fa';
+
 
 function App() {
   const fullName = "Hi,I'm Riham Bouchiha!";
@@ -76,8 +78,8 @@ function App() {
               <hr className="separator" />
               <h3>Software Engineering Student</h3>
               <p>
-                Je suis passionnée par le développement logiciel et je cherche à
-                créer des applications performantes et modernes. Bienvenue sur mon portfolio !
+                I am a software engineering student in my fourth year of engineering school, with a technical degree in Computer Science. Passionate about DevOps, I build efficient, secure, and user-focused web and mobile applications.
+                 Welcome to my portfolio — a showcase of my journey and achievements!
               </p>
 
               <button
@@ -99,38 +101,39 @@ function App() {
               <img src={rhmImg} alt="Riham Bouchiha" className="about-photo" />
             </div>
             <div className="about-details">
-              <div className="about-cards">
-                <div className="about-card">
-                  <span className="card-title">💼 Experience</span>
-                  <p>3 Years</p>
-                </div>
-                <div className="about-card">
-                  <span className="card-title">📞 Support</span>
-                  <p>Online 24/7</p>
-                </div>
-              </div>
-              <p className="about-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates optio libero, unde quos nihil rem doloribus officiis eveniet, dolore assumenda quis. Quia molestiae temporibus tempora pariatur eos vitae dolore 
-              deserunt ratione ad voluptatibus illum repudiandae, perferendis ullam sunt nulla ipsum odit totam fugiat accusamus officia ducimus officiis atque! Officia necessitatibus dolorem 
-              voluptatem cum rerum nesciunt consectetur, dignissimos accusamus possimus modi ipsa obcaecati doloremque itaque facilis ea, aspernatur, accusantium amet consequatur debitis laudantium 
-              earum perspiciatis est facere iste? Aut recusandae eaque, omnis sapiente dolorem soluta aspernatur 
-              tempora esse ratione, quibusdam magnam expedita accusamus at sit ex nemo beatae! Iure mollitia 
-              ut veniam at obcaecati ab, nemo esse
+             <div className="about-cards">
+            <div className="about-card">
+              <FaAward className="about-icon" />
+              <span className="card-title">Experience</span>
+              <p>4 Years</p>
+            </div>
+
+            <div className="about-card">
+              <FaHeadset className="about-icon" />
+              <span className="card-title">Support</span>
+              <p>Online 24/7</p>
+            </div>
+          </div>
+
+              <p className="about-text">
+                It all started with a simple curiosity: “What happens when I click this button?”
+                From that question grew a deep passion for computer science. Today, I’m a fourth-year software engineering student who builds efficient, intuitive, and secure web and mobile applications. I have a strong interest in cybersecurity and constantly explore new tools and practices in that field. I also master several programming languages, which allows me to adapt to different technical contexts with confidence.
               </p>
               <div className="about-buttons">
-                <a href="/cv_en.pdf" download className="btn-cv">
-                  📄 Download CV-En
+                <a href="/cv_riham_bouchiha.pdf" download className="btn-cv">
+                📄 Download CV-En
                 </a>
-                <a href="/cv_fr.pdf" download className="btn-cv">
-                  📄 Télécharger CV-Fr
+                <a href="/cv_riham_bouchiha.pdf" download className="btn-cv">
+                📄 Télécharger CV-Fr
                 </a>
-              </div>
+            </div>
             </div>
           </div>
         </section>
 
         <section id="skills" className="section skills-section">
           <h1 className="section-title">Skills</h1>
-          <h2 className="skills-subtitle">Technologies I Master</h2>
+          <h2 className="section-subtitle">Technologies I Master</h2>     
 
           <div className="skills-container">
             <div className="skills-column">
@@ -178,8 +181,9 @@ function App() {
           </div>
         </section>
 
-        <section id="education" className="section education-section">
-          <h1 className="section-title">Education</h1>
+       <section id="education" className="section education-section">
+        <h1 className="section-title">Education</h1>
+        <h2 className="section-subtitle">Your subtitle here</h2>
           <div className="education-timeline">
             <div className="timeline-item left">
               <div className="timeline-content">
@@ -214,11 +218,9 @@ function App() {
             </div>
           </div>
         </section>
-
         <section id="portfolio" className="section portfolio-section">
           <h1 className="section-title">Portfolio</h1>
-          <h2 className="section-subtitle">My Recent Work</h2>
-
+          <h2 className="section-subtitle">Your subtitle here</h2>
           <div className="portfolio-container">
             <div className="portfolio-card">
               <img src="/projects/project1.jpg" alt="Project 1" className="portfolio-image" />
@@ -241,7 +243,6 @@ function App() {
         <section id="certifications" className="section certifications-section">
           <h1 className="section-title">Certifications</h1>
           <h2 className="section-subtitle">Mes Réalisations Certifiées</h2>
-
           <div className="certifications-container">
             <div className="certification-card">
               <img src="/certifications/cert1.jpg" alt="Certification 1" className="certification-image" />
@@ -276,10 +277,11 @@ function App() {
               </div>
             </div>
           </div>
-        </section>
+        </section>   
+        <section id="experiences" className="section experience-section">
+          <h1 className="section-title">Expériences</h1>
+          <h2 className="section-subtitle">Your subtitle here</h2>
 
-        <section id="experiences" className="qualification-section experience-section">
-          <h2 className="section-title">Expériences</h2>
           <div className="education-timeline">
             <div className="timeline-item left">
               <div className="timeline-content">
@@ -306,8 +308,8 @@ function App() {
         </section>
 
         <section id="contact" className="section contact-section">
-          <h2 className="section-title">Contact</h2>
-          <span className="section-subtitle">Get in touch</span>
+        <h1 className="section-title">Contact</h1>
+        <span className="section-subtitle">Get in touch</span>
 
           <div className="contact-container">
             <div className="contact-info">
