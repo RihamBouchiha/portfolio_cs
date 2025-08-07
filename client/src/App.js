@@ -10,7 +10,6 @@ import ess from './imgs/ess.jpg';
 import esisa from './imgs/esisa.png';
 import ict from './imgs/ict.png';
 
-
 import { 
   FaGithub, 
   FaLinkedin, 
@@ -371,19 +370,21 @@ function App() {
               <div className="contact-card">
                 <FaMapMarker className="contact-icon" />
                 <h3 className="contact-title">Address</h3>
-                <span className="contact-data">Rabat, Morocco</span>
+                <span className="contact-data">Tangier, Morocco</span>
               </div>
 
               <div className="contact-card">
                 <FaEnvelope className="contact-icon" />
                 <h3 className="contact-title">Email</h3>
-                <span className="contact-data">riham@example.com</span>
+                <span className="contact-data">rihambouchiha@ump.ac.ma</span>
               </div>
 
               <div className="contact-card">
-                <FaPhoneAlt className="contact-icon" />
-                <h3 className="contact-title">Phone</h3>
-                <span className="contact-data">+212 600 000 000</span>
+                <FaLinkedin className="contact-icon" />
+                <h3 className="contact-title">LinkedIn</h3>
+                <span className="contact-data">
+                  <a href="https://www.linkedin.com/in/rihambouchiha" target="_blank" rel="noopener noreferrer">RIHAM Bouchiha</a>
+                </span>
               </div>
             </div>
 
@@ -393,21 +394,6 @@ function App() {
               <textarea name="message" rows="7" placeholder="Your Message" required className="contact-input"></textarea>
               <button type="submit" className="btn btn-contact">Send Message</button>
             </form>
-          </div>
-
-          <div className="contact-footer-socials">
-            <a href="https://facebook.com/yourprofile" target="_blank" rel="noopener noreferrer" className="contact-social-link">
-              <FaFacebookF />
-            </a>
-            <a href="https://twitter.com/yourprofile" target="_blank" rel="noopener noreferrer" className="contact-social-link">
-              <FaTwitter />
-            </a>
-            <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" className="contact-social-link">
-              <FaLinkedinIn />
-            </a>
-            <a href="https://instagram.com/yourprofile" target="_blank" rel="noopener noreferrer" className="contact-social-link">
-              <FaInstagram />
-            </a>
           </div>
         </section>
 
