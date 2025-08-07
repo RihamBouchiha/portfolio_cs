@@ -4,6 +4,12 @@ import './App.css';
 import rhmImg from './imgs/rhm.png';
 import rhm1 from './imgs/rhmImg1.png';
 import rhkHotel from './imgs/rhkHotel.png';
+import gustoRh from './imgs/gustoRh.png';
+import oiasis from './imgs/oiasis.png';
+import ess from './imgs/ess.jpg';
+import esisa from './imgs/esisa.png';
+import ict from './imgs/ict.png';
+
 
 import { 
   FaGithub, 
@@ -251,57 +257,70 @@ function App() {
             <div className="portfolio-card">
               <img src={rhkHotel} alt="Project 2" className="portfolio-image" />
               <h3 className="portfolio-title">RHK-Hotel</h3>
+              <h5 className='portfolio-subtitle'>Hotel Management Platform</h5>
               <a href="https://rihambouchiha.github.io/PFE-HOTEL-RHK-Riham/" target="_blank" rel="noopener noreferrer" className="portfolio-link">
-                En savoir plus →
+                See More →
               </a>
             </div>
 
             <div className="portfolio-card">
-              <img src="/projects/project2.jpg" alt="Project 2" className="portfolio-image" />
-              <h3 className="portfolio-title">Another Project</h3>
-              <a href="https://lien-vers-plus.com" target="_blank" rel="noopener noreferrer" className="portfolio-link">
-                En savoir plus →
+              <img src={gustoRh} alt="Project 2" className="portfolio-image" />              
+              <h3 className="portfolio-title">Gusto Rh</h3>
+              <h5 className='portfolio-subtitle'>Human Resources Management Web Application</h5>
+              <a href="https://rihambouchiha.github.io/grh/" target="_blank" rel="noopener noreferrer" className="portfolio-link">
+                See More →
+              </a>
+            </div>
+            <div className="portfolio-card">
+              <img src={oiasis} alt="Project 2" className="portfolio-image" />              
+              <h3 className="portfolio-title">L'oisis Intime</h3>
+              <h5 className='portfolio-subtitle'>Guesthouse Website</h5>
+              <a href="https://rihambouchiha.github.io/maison-d-h-tes-/" target="_blank" rel="noopener noreferrer" className="portfolio-link">
+                See More →
+              </a>
+            </div>
+            <div className="portfolio-card">
+              <img src={gustoRh} alt="Project 2" className="portfolio-image" />              
+              <h3 className="portfolio-title">Gusto Rh</h3>
+              <h5 className='portfolio-subtitle'>Human Resources Management Web Application</h5>
+              <a href="https://rihambouchiha.github.io/grh/" target="_blank" rel="noopener noreferrer" className="portfolio-link">
+                See More →
               </a>
             </div>
           </div>
+          
         </section>
 
         <section id="certifications" className="section certifications-section">
           <h1 className="section-title">Certifications</h1>
-          <h2 className="section-subtitle">Mes Réalisations Certifiées</h2>
+          <h2 className="section-subtitle">My Certified Achievements</h2>
           <div className="certifications-container">
             <div className="certification-card">
-              <img src="/certifications/cert1.jpg" alt="Certification 1" className="certification-image" />
-              <div className="certification-content">
-                <h3>JavaScript Algorithms and Data Structures</h3>
-                <p>freeCodeCamp</p>
-                <a href="https://www.freecodecamp.org/certification/tonlien" target="_blank" rel="noopener noreferrer" className="certification-link">
-                  Voir le certificat →
-                </a>
-              </div>
+              <img src={ess} alt="Project 2" className="portfolio-image" />              
+                <div className="certification-content">
+                  <h3>JavaScript Algorithms and Data Structures</h3>
+                    <p>freeCodeCamp</p>
+                      <a href="/ess.pdf" target="_blank" rel="noopener noreferrer" className="certification-link">Voir le certificat →</a>
+                </div>
+            </div>
+             <div className="certification-card">
+              <img src={ict} alt="Project 2" className="portfolio-image" />              
+                <div className="certification-content">
+                  <h3>JavaScript Algorithms and Data Structures</h3>
+                    <p>freeCodeCamp</p>
+                      <a href="/ict.pdf" target="_blank" rel="noopener noreferrer" className="certification-link">Voir le certificat →</a>
+                </div>
+            </div>
+             <div className="certification-card">
+              <img src={esisa} alt="Project 2" className="portfolio-image" />              
+                <div className="certification-content">
+                  <h3>JavaScript Algorithms and Data Structures</h3>
+                    <p>freeCodeCamp</p>
+                      <a href="/esisa.pdf" target="_blank" rel="noopener noreferrer" className="certification-link">Voir le certificat →</a>
+                </div>
             </div>
 
-            <div className="certification-card">
-              <img src="/certifications/cert2.jpg" alt="Certification 2" className="certification-image" />
-              <div className="certification-content">
-                <h3>React - The Complete Guide</h3>
-                <p>Udemy</p>
-                <a href="https://www.udemy.com/certificate/tonlien" target="_blank" rel="noopener noreferrer" className="certification-link">
-                  Voir le certificat →
-                </a>
-              </div>
-            </div>
-
-            <div className="certification-card">
-              <img src="/certifications/cert3.jpg" alt="Certification 3" className="certification-image" />
-              <div className="certification-content">
-                <h3>Node.js and Express</h3>
-                <p>Coursera</p>
-                <a href="https://coursera.org/certificate/tonlien" target="_blank" rel="noopener noreferrer" className="certification-link">
-                  Voir le certificat →
-                </a>
-              </div>
-            </div>
+            
           </div>
         </section>   
         <section id="experiences" className="section experience-section">

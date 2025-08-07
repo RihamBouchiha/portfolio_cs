@@ -1055,6 +1055,9 @@ body {
   margin: 15px 0 5px;
   font-weight: bold;
 }
+.portfolio-subtitle{
+  color: #939292;
+}
 
 .portfolio-link {
   display: inline-block;
