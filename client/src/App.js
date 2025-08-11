@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-
+import React, { useState, useEffect, useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import './App.css';
 import rhmImg from './imgs/rhm.png';
 import rhm1 from './imgs/rhmImg1.png';
@@ -14,14 +14,19 @@ import logoESTFes from "./imgs/est.jpeg";
 import logoStrasbourg from "./imgs/med.png";
 import logoCommuneTanger from './imgs/commune.png';
 import logoActivDigital from './imgs/images.png';
+import unistra from './imgs/unistra.png';
+
 import logoESTF from './imgs/est.jpeg';
 import logoD3Soft from './imgs/d3.png';
+import eclairage_publique from './imgs/eclairage_publique.png';
+
 import logo from './imgs/R.png'; 
+import { FaLinkedin } from 'react-icons/fa';
+
 
 
 import { 
-  FaGithub, 
-  FaLinkedin, 
+  FaGithub,  
   FaTelegramPlane, 
   FaMapMarker, 
   FaEnvelope, 
@@ -64,12 +69,31 @@ function App() {
       clearInterval(cursorInterval);
     };
   }, []);
+const formRef = useRef();
+
+   const handleSubmit = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm(
+      'service_84mmq4u',   // Remplace par ton service ID EmailJS
+      'template_r69qtyp',  // Remplace par ton template ID EmailJS
+      formRef.current,
+      'mL1e4tuCF2AFG2kJt'    // Remplace par ta clé publique EmailJS
+    )
+    .then((result) => {
+      alert("Message envoyé avec succès !");
+      formRef.current.reset();
+    }, (error) => {
+      alert("Erreur lors de l'envoi, veuillez réessayer.");
+      console.error(error.text);
+    });
+  };
 
   return (
     <>
      <nav className="navbar">
   <div className="logo-container">
-    <a href="#top">
+    <a href="#home">
       <img src={logo} alt="Logo" className="logo" />
     </a>
   </div>
@@ -109,7 +133,7 @@ function App() {
                 className="btn-say-hello"
                 onClick={() => window.location.href = '#contact'}
               >
-                <FaTelegramPlane style={{ marginRight: '10px' }} /> Say Hello
+                <FaTelegramPlane style={{ marginRight: '10px' }} /> Contact me
               </button>
             </div>
           </div>
@@ -142,11 +166,11 @@ function App() {
                 I’ve always been driven by curiosity — wondering what happens when I click a button or explore new technology. That curiosity quickly turned into a genuine passion for computer science. Now, as a fourth-year software engineering student, I enjoy creating efficient, user-friendly, and secure web and mobile applications. Cybersecurity fascinates me, and I’m always eager to learn about the latest tools and best practices. With experience in multiple programming languages, I’m confident adapting to different technical challenges and environments.
               </p>
               <div className="about-buttons">
-                <a href="/cv_riham_bouchiha.pdf" download className="btn-cv">
-                📄 Download CV-En
+                <a href="/resume.pdf" download className="btn-cv">
+                Download CV-En
                 </a>
                 <a href="/cv_riham_bouchiha.pdf" download className="btn-cv">
-                📄 Télécharger CV-Fr
+                Télécharger CV-Fr
                 </a>
             </div>
             </div>
@@ -266,8 +290,19 @@ function App() {
       <p>L1 SPS - Spé Physique</p>
       <span>2021 - 2022</span>
     </a>
-
-    <div className="education-card">
+    <a
+      href="https://www.unistra.fr/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="education-card"
+    >
+      <img src={unistra} alt="univérsité de strasbourg" className="edu-logo" />
+      <h3>University of Strasbourg</h3>
+      <p>L1 spé Physique</p>
+      <span>2021 - 2022</span>
+    </a>
+    
+    <div className="education-card2">
       <h3>Lycée Abi Abass Sebti</h3>
       <p>Baccalauréat Sciences Physiques</p>
       <span>2020 - 2021</span>
@@ -293,7 +328,7 @@ function App() {
               <img src={gustoRh} alt="Project 2" className="portfolio-image" />              
               <h3 className="portfolio-title">Gusto Rh</h3>
               <h5 className='portfolio-subtitle'>Human Resources Management Web Application</h5>
-              <a href="https://rihambouchiha.github.io/grh/" target="_blank" rel="noopener noreferrer" className="portfolio-link">
+              <a href="https://github.com/RihamBouchiha/grh" target="_blank" rel="noopener noreferrer" className="portfolio-link">
                 See More →
               </a>
             </div>
@@ -302,6 +337,14 @@ function App() {
               <h3 className="portfolio-title">L'oisis Intime</h3>
               <h5 className='portfolio-subtitle'>Guesthouse Website</h5>
               <a href="https://rihambouchiha.github.io/maison-d-h-tes-/" target="_blank" rel="noopener noreferrer" className="portfolio-link">
+                See More →
+              </a>
+            </div>
+            <div className="portfolio-card">
+              <img src={eclairage_publique} alt="Project 2" className="portfolio-image" />              
+              <h3 className="portfolio-title">Eclairage publique</h3>
+              <h5 className='portfolio-subtitle'>Public lighting mobile application</h5>
+              <a href="https://github.com/RihamBouchiha/eclairage_public" target="_blank" rel="noopener noreferrer" className="portfolio-link">
                 See More →
               </a>
             </div>
@@ -395,71 +438,69 @@ function App() {
 
 
         <section id="contact" className="section contact-section">
-  <h1 className="section-title">Contact</h1>
-  <span className="section-subtitle">Get in touch</span>
+        <h1 className="section-title">Contact</h1>
+        <span className="section-subtitle">Get in touch</span>
 
-  <div className="contact-container">
-    <div className="contact-info">
-      <div className="contact-card">
-        <FaMapMarker className="contact-icon" />
-        <h3 className="contact-title">Address</h3>
-        <span className="contact-data">Tangier, Morocco</span>
-      </div>
+        <div className="contact-container">
+          <div className="contact-info">
+            <div className="contact-card">
+              <FaMapMarker className="contact-icon" />
+              <h3 className="contact-title">Address</h3>
+              <span className="contact-data">Tangier, Morocco</span>
+            </div>
 
-      <div className="contact-card">
-  <FaEnvelope className="contact-icon" />
-  <h3 className="contact-title">Email</h3>
-  <span className="contact-data">
-    <a 
-      href="mailto:rihambouchiha@ump.ac.ma" 
-      className="contact-link" 
-    >
-      rihambouchiha@ump.ac.ma
-    </a>
-  </span>
-</div>
+            <div className="contact-card">
+              <FaEnvelope className="contact-icon" />
+              <h3 className="contact-title">Email</h3>
+              <span className="contact-data">
+                <a 
+                  href="mailto:rihambouchiha@ump.ac.ma" 
+                  className="contact-link" 
+                >
+                  rihambouchiha@ump.ac.ma
+                </a>
+              </span>
+            </div>
 
+            <div className="contact-card">
+<FaLinkedin className="contact-icon" />
+              <h3 className="contact-title">LinkedIn</h3>
+              <span className="contact-data">
+                <a 
+                  href="https://www.linkedin.com/in/riham-bouchiha-138419274/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="contact-link"
+                >
+                  RIHAM Bouchiha
+                </a>
+              </span>
+            </div>
+          </div>
 
-      <div className="contact-card">
-        <FaLinkedin className="contact-icon" />
-        <h3 className="contact-title">LinkedIn</h3>
-        {/* Nom LinkedIn cliquable vers ton profil */}
-        <span className="contact-data">
-          <a 
-            href="https://www.linkedin.com/in/riham-bouchiha-138419274/" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="contact-link"
-          >
-            RIHAM Bouchiha
+          <form ref={formRef} onSubmit={handleSubmit} className="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required className="contact-input" />
+            <input type="email" name="email" placeholder="Your Email" required className="contact-input" />
+            <textarea name="message" rows="7" placeholder="Your Message" required className="contact-input"></textarea>
+            <button type="submit" className="btn btn-contact">Send Message</button>
+          </form>
+        </div>
+
+        <br/>
+        <br/>
+
+        <div className="contact-socials">
+          <a href="https://github.com/RihamBouchiha" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <FaGithub className="social-icon" />
           </a>
-        </span>
-      </div>
-    </div>
-
-    <form className="contact-form">
-      <input type="text" name="name" placeholder="Your Name" required className="contact-input" />
-      <input type="email" name="email" placeholder="Your Email" required className="contact-input" />
-      <textarea name="message" rows="7" placeholder="Your Message" required className="contact-input"></textarea>
-      <button type="submit" className="btn btn-contact">Send Message</button>
-    </form>
-  </div>
-
-      <br/>
-      <br/>
-  
-  <div className="contact-socials">
-    <a href="https://github.com/RihamBouchiha" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-      <FaGithub className="social-icon" />
-    </a>
-    <a href="https://www.linkedin.com/in/riham-bouchiha-138419274/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-      <FaLinkedin className="social-icon" />
-    </a>
-  </div>
-   <div className="footer-copyright">
-    © 2025 Tous droits réservés
-  </div>
-</section>
+          <a href="https://www.linkedin.com/in/riham-bouchiha-138419274/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <FaLinkedin className="social-icon" />
+          </a>
+        </div>
+        <div className="footer-copyright">
+          © 2025 All rights reserved, Riham bouchiha
+        </div>
+      </section>
 
 
       </main>

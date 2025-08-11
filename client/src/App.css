@@ -1411,8 +1411,25 @@ body {
   transition: all 0.3s ease;
   cursor: pointer;
 }
+.education-card2 {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  border-radius: 15px;
+  padding: 3.5rem;
+  width: 250px;
+  text-align: center;
+  position: relative;
+  border: 1px solid rgba(255,255,255,0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
 
 .education-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+.education-card2:hover {
   transform: translateY(-8px) scale(1.03);
   background: rgba(255, 255, 255, 0.2);
   box-shadow: 0 8px 20px rgba(0,0,0,0.2);
@@ -1428,14 +1445,29 @@ body {
   margin-bottom: 0.5rem;
   color: #D46A6A;
 }
+.education-card2 h3 {
+  font-size: 1.1rem;
+  padding: 25px;
+  margin-bottom: 0.5rem;
+  color: #D46A6A;
+}
 
 .education-card p {
   font-size: 0.95rem;
   color: #282828;
   margin-bottom: 0.5rem;
 }
+.education-card2  p {
+  font-size: 0.95rem;
+  color: #282828;
+  margin-bottom: 0.5rem;
+}
 
 .education-card span {
+  font-size: 0.85rem;
+  color: #767676;
+}
+.education-card2 span {
   font-size: 0.85rem;
   color: #767676;
 }
@@ -1593,6 +1625,18 @@ body {
   display: block;        /* pour que tout le contenu soit cliquable */
   cursor: pointer;       /* curseur pointeur au survol */
   transition: transform 0.3s ease; /* effet subtil au hover */
+}
+.education-card2{
+  text-decoration: none; /* supprime la soulignure */
+  color: inherit;        /* conserve la couleur du texte normale */
+  display: block;        /* pour que tout le contenu soit cliquable */
+  cursor: pointer;       /* curseur pointeur au survol */
+  transition: transform 0.3s ease; /* effet subtil au hover */
+}
+.education-card2:hover {
+  transform: translateY(-5px);
+  /* tu peux aussi ajouter une ombre ou un changement de couleur ici */
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
 }
 
 .education-card:hover {
