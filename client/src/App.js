@@ -31,6 +31,7 @@ import {
   FaInstagram 
 } from 'react-icons/fa';
 import { FaAward, FaBriefcase, FaHeadset } from 'react-icons/fa';
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 
 function App() {
@@ -132,8 +133,7 @@ function App() {
           </div>
 
               <p className="about-text">
-                It all started with a simple curiosity: “What happens when I click this button?”
-                From that question grew a deep passion for computer science. Today, I’m a fourth-year software engineering student who builds efficient, intuitive, and secure web and mobile applications. I have a strong interest in cybersecurity and constantly explore new tools and practices in that field. I also master several programming languages, which allows me to adapt to different technical contexts with confidence.
+                I’ve always been driven by curiosity — wondering what happens when I click a button or explore new technology. That curiosity quickly turned into a genuine passion for computer science. Now, as a fourth-year software engineering student, I enjoy creating efficient, user-friendly, and secure web and mobile applications. Cybersecurity fascinates me, and I’m always eager to learn about the latest tools and best practices. With experience in multiple programming languages, I’m confident adapting to different technical challenges and environments.
               </p>
               <div className="about-buttons">
                 <a href="/cv_riham_bouchiha.pdf" download className="btn-cv">
@@ -335,43 +335,51 @@ function App() {
             
           </div>
         </section>   
-        <section id="experiences" className="section experience-section">
+       <section id="experiences" className="section experience-section">
   <h1 className="section-title">Experiences</h1>
   <h2 className="section-subtitle">Professional Journey & Key Experiences</h2>
 
   <div className="experience-grid">
     <article className="experience-card">
-      <h3>
-        Commune de Tanger 
-        <img src={logoCommuneTanger} alt="Commune de Tanger Logo" className="experience-logo" />
-      </h3>
+      <a href="https://fr.tanger.ma/" target="_blank" rel="noopener noreferrer" className="experience-link">
+        <h3>
+          Commune de Tanger 
+          <img src={logoCommuneTanger} alt="Commune de Tanger Logo" className="experience-logo" />
+        </h3>
+      </a>
       <time className="experience-date">July 2025 - August 2025</time>
       <p>Development of a Public Lighting Mobile Application.</p>
     </article>
 
     <article className="experience-card">
-      <h3>
-        Activ Digital 
-        <img src={logoActivDigital} alt="Activ Digital Logo" className="experience-logo" />
-      </h3>
+      <a href="https://www.linkedin.com/company/activ-digital/" target="_blank" rel="noopener noreferrer" className="experience-link">
+        <h3>
+          Activ Digital 
+          <img src={logoActivDigital} alt="Activ Digital Logo" className="experience-logo" />
+        </h3>
+      </a>
       <time className="experience-date">April 2024 - June 2024</time>
       <p>Development of a Human Resources Management Application</p>
     </article>
 
     <article className="experience-card">
-      <h3>
-        ESTF 
-        <img src={logoESTF} alt="ESTF Logo" className="experience-logo" />
-      </h3>
+      <a href="http://www.est-usmba.ac.ma/" target="_blank" rel="noopener noreferrer" className="experience-link">
+        <h3>
+          ESTF 
+          <img src={logoESTF} alt="ESTF Logo" className="experience-logo" />
+        </h3>
+      </a>
       <time className="experience-date">October 2023 - April 2024</time>
       <p>Hotel Reservation Management Platform</p>
     </article>
 
     <article className="experience-card">
-      <h3>
-        D3 Soft 
-        <img src={logoD3Soft} alt="D3 Soft Logo" className="experience-logo" />
-      </h3>
+      <a href="https://d3soft.ma/" target="_blank" rel="noopener noreferrer" className="experience-link">
+        <h3>
+          D3 Soft 
+          <img src={logoD3Soft} alt="D3 Soft Logo" className="experience-logo" />
+        </h3>
+      </a>
       <time className="experience-date">June 2023 - July 2023</time>
       <p>Development of a Payment Management Application</p>
     </article>
@@ -379,41 +387,74 @@ function App() {
 </section>
 
 
+
         <section id="contact" className="section contact-section">
-        <h1 className="section-title">Contact</h1>
-        <span className="section-subtitle">Get in touch</span>
+  <h1 className="section-title">Contact</h1>
+  <span className="section-subtitle">Get in touch</span>
 
-          <div className="contact-container">
-            <div className="contact-info">
-              <div className="contact-card">
-                <FaMapMarker className="contact-icon" />
-                <h3 className="contact-title">Address</h3>
-                <span className="contact-data">Tangier, Morocco</span>
-              </div>
+  <div className="contact-container">
+    <div className="contact-info">
+      <div className="contact-card">
+        <FaMapMarker className="contact-icon" />
+        <h3 className="contact-title">Address</h3>
+        <span className="contact-data">Tangier, Morocco</span>
+      </div>
 
-              <div className="contact-card">
-                <FaEnvelope className="contact-icon" />
-                <h3 className="contact-title">Email</h3>
-                <span className="contact-data">rihambouchiha@ump.ac.ma</span>
-              </div>
+      <div className="contact-card">
+  <FaEnvelope className="contact-icon" />
+  <h3 className="contact-title">Email</h3>
+  <span className="contact-data">
+    <a 
+      href="mailto:rihambouchiha@ump.ac.ma" 
+      className="contact-link"
+    >
+      rihambouchiha@ump.ac.ma
+    </a>
+  </span>
+</div>
 
-              <div className="contact-card">
-                <FaLinkedin className="contact-icon" />
-                <h3 className="contact-title">LinkedIn</h3>
-                <span className="contact-data">
-                  <a href="https://www.linkedin.com/in/rihambouchiha" target="_blank" rel="noopener noreferrer">RIHAM Bouchiha</a>
-                </span>
-              </div>
-            </div>
 
-            <form className="contact-form">
-              <input type="text" name="name" placeholder="Your Name" required className="contact-input" />
-              <input type="email" name="email" placeholder="Your Email" required className="contact-input" />
-              <textarea name="message" rows="7" placeholder="Your Message" required className="contact-input"></textarea>
-              <button type="submit" className="btn btn-contact">Send Message</button>
-            </form>
-          </div>
-        </section>
+      <div className="contact-card">
+        <FaLinkedin className="contact-icon" />
+        <h3 className="contact-title">LinkedIn</h3>
+        {/* Nom LinkedIn cliquable vers ton profil */}
+        <span className="contact-data">
+          <a 
+            href="https://www.linkedin.com/in/riham-bouchiha-138419274/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="contact-link"
+          >
+            RIHAM Bouchiha
+          </a>
+        </span>
+      </div>
+    </div>
+
+    <form className="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required className="contact-input" />
+      <input type="email" name="email" placeholder="Your Email" required className="contact-input" />
+      <textarea name="message" rows="7" placeholder="Your Message" required className="contact-input"></textarea>
+      <button type="submit" className="btn btn-contact">Send Message</button>
+    </form>
+  </div>
+
+      <br/>
+      <br/>
+  
+  <div className="contact-socials">
+    <a href="https://github.com/RihamBouchiha" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+      <FaGithub className="social-icon" />
+    </a>
+    <a href="https://www.linkedin.com/in/riham-bouchiha-138419274/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+      <FaLinkedin className="social-icon" />
+    </a>
+  </div>
+   <div className="footer-copyright">
+    © 2025 Tous droits réservés
+  </div>
+</section>
+
 
       </main>
     </>
