@@ -2036,4 +2036,42 @@ html {
   max-width: 100%;
   overflow-wrap: break-word;
 }
+@media (max-width: 768px) {
+  /* Réduire les paddings/marges pour gagner de la place */
+  body, .main-content, section {
+    padding: 1rem !important;
+    margin: 0 !important;
+  }
+
+  /* Simplifier la police */
+  body {
+    font-size: 14px !important;
+    line-height: 1.4 !important;
+  }
+
+  /* Images plus petites et centrées */
+  img {
+    max-width: 90%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* Menu simplifié (vertical et plein écran) */
+  .nav-list {
+    flex-direction: column !important;
+    padding: 0.5rem !important;
+  }
+
+  .nav-link {
+    font-size: 1rem !important;
+    padding: 0.5rem 0 !important;
+  }
+
+  /* Boutons et éléments cliquables agrandis */
+  button, .btn-say-hello {
+    padding: 0.8rem 1.2rem !important;
+    font-size: 1rem !important;
+  }
+}
 
