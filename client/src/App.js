@@ -16,6 +16,7 @@ import logoCommuneTanger from './imgs/commune.png';
 import logoActivDigital from './imgs/images.png';
 import logoESTF from './imgs/est.jpeg';
 import logoD3Soft from './imgs/d3.png';
+import logo from './imgs/R.png'; 
 
 
 import { 
@@ -31,7 +32,6 @@ import {
   FaInstagram 
 } from 'react-icons/fa';
 import { FaAward, FaBriefcase, FaHeadset } from 'react-icons/fa';
-<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 
 function App() {
@@ -67,18 +67,24 @@ function App() {
 
   return (
     <>
-      <nav className="navbar">
-        <ul className="nav-list">
-          <li><a href="#home" className="nav-link">Home</a></li>
-          <li><a href="#about" className="nav-link">About</a></li>
-          <li><a href="#skills" className="nav-link">Skills</a></li>
-          <li><a href="#education" className='nav-link'>Education</a></li>
-          <li><a href="#portfolio" className="nav-link">Portfolio</a></li>
-          <li><a href="#certifications" className='nav-link'>Certifications</a></li>
-          <li><a href='#experiences' className='nav-link'>Experiences</a></li>
-          <li><a href="#contact" className="nav-link">Contact</a></li>
-        </ul>
-      </nav>
+     <nav className="navbar">
+  <div className="logo-container">
+    <a href="#top">
+      <img src={logo} alt="Logo" className="logo" />
+    </a>
+  </div>
+  <ul className="nav-list">
+    <li><a href="#home" className="nav-link">Home</a></li>
+    <li><a href="#about" className="nav-link">About</a></li>
+    <li><a href="#skills" className="nav-link">Skills</a></li>
+    <li><a href="#education" className='nav-link'>Education</a></li>
+    <li><a href="#portfolio" className="nav-link">Portfolio</a></li>
+    <li><a href="#certifications" className='nav-link'>Certifications</a></li>
+    <li><a href='#experiences' className='nav-link'>Experiences</a></li>
+    <li><a href="#contact" className="nav-link">Contact</a></li>
+  </ul>
+</nav>
+
 
       <main className="main-content">
         <section id="home" className="section home-section">
