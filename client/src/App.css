@@ -1645,6 +1645,9 @@ body {
 .contact-link {
   text-decoration: none;
   color: inherit;
+  word-break: break-word;
+  max-width: 100%;
+  overflow-wrap: break-word;
 }
 
 .contact-link:hover {
@@ -1971,5 +1974,66 @@ html {
     margin-left: 0;
     margin-right: 0;
   }
+}
+@media (max-width: 768px) {
+  .nav-list {
+    position: fixed;
+    top: 60px; /* sous la navbar */
+    left: 0;
+    right: 0;
+    background: white;
+    flex-direction: column;
+    padding: 1rem 1rem; /* réduit la padding horizontale */
+    margin: 0;
+    max-height: calc(100vh - 60px); /* pour ne pas dépasser la hauteur de l’écran */
+    overflow-y: auto; /* scroll vertical si trop grand */
+    box-sizing: border-box; /* important pour padding */
+    transform: translateY(-100%);
+    transition: transform 0.3s ease;
+    pointer-events: none;
+  }
+
+  .nav-list.open {
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
+  .nav-list li {
+    width: 100%;
+  }
+
+  .nav-link {
+    display: block;
+    padding: 0.8rem 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; /* tronquer le texte si trop long */
+    width: 100%;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+.typing {
+  font-size: 1.8rem; /* taille plus petite sur mobile */
+  word-break: break-word; /* pour éviter que ça déborde */
+  white-space: normal; /* permet retour à la ligne */
+  text-align: center;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+@media (min-width: 769px) {
+  .typing {
+    font-size: 2.5rem;
+    white-space: nowrap;
+    text-align: left;
+  }
+}
+.contact-email {
+  word-break: break-word;
+  max-width: 100%;
+  overflow-wrap: break-word;
 }
 

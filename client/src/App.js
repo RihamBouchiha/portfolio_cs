@@ -412,7 +412,7 @@ function App() {
   <span className="contact-data">
     <a 
       href="mailto:rihambouchiha@ump.ac.ma" 
-      className="contact-link"
+      className="contact-link" 
     >
       rihambouchiha@ump.ac.ma
     </a>
