@@ -9,6 +9,14 @@ import oiasis from './imgs/oiasis.png';
 import ess from './imgs/ess.jpg';
 import esisa from './imgs/esisa.png';
 import ict from './imgs/ict.png';
+import logoENIAD from "./imgs/image.png";
+import logoESTFes from "./imgs/est.jpeg";
+import logoStrasbourg from "./imgs/med.png";
+import logoCommuneTanger from './imgs/commune.png';
+import logoActivDigital from './imgs/images.png';
+import logoESTF from './imgs/est.jpeg';
+import logoD3Soft from './imgs/d3.png';
+
 
 import { 
   FaGithub, 
@@ -212,43 +220,56 @@ function App() {
           </div>
         </section>
 
-       <section id="education" className="section education-section">
-        <h1 className="section-title">Education</h1>
-        <h2 className="section-subtitle">My Academic Journey</h2>
-          <div className="education-timeline">
-            <div className="timeline-item left">
-              <div className="timeline-content">
-                <h3 className="timeline-degree">Ecole Nationale de l'intelligence artificielle et du digital</h3>
-                <p className="timeline-institution">Software engineering Degree</p>
-                <span className="timeline-duration">2024- Present</span>
-              </div>
-            </div>
+      <section id="education" className="section education-section">
+  <h1 className="section-title">Education</h1>
+  <h2 className="section-subtitle">My Academic Journey</h2>
 
-            <div className="timeline-item right">
-              <div className="timeline-content">
-                <h3 className="timeline-degree">Ecole Supérieure de Technlogie de Fés</h3>
-                <p className="timeline-institution">DUT-Computer Science Degree</p>
-                <span className="timeline-duration">2022-2024</span>
-              </div>
-            </div>
+  <div className="education-timeline-modern">
+    <a
+      href="https://eniad.ump.ma/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="education-card"
+    >
+      <img src={logoENIAD} alt="ENIAD" className="edu-logo" />
+      <h3>Ecole Nationale de l'IA et du Digital</h3>
+      <p>Software Engineering Degree</p>
+      <span>2024 - Present</span>
+    </a>
 
-            <div className="timeline-item left">
-              <div className="timeline-content">
-                <h3 className="timeline-degree">Faculté de médecine Strasbourg FRANCE</h3>
-                <p className="timeline-institution">L1 Sps-Spé Physique</p>
-                <span className="timeline-duration">2021-2022</span>
-              </div>
-            </div>
+    <a
+      href="http://www.est-usmba.ac.ma/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="education-card"
+    >
+      <img src={logoESTFes} alt="EST Fès" className="edu-logo" />
+      <h3>Ecole Supérieure de Technologie de Fès</h3>
+      <p>DUT - Computer Science</p>
+      <span>2022 - 2024</span>
+    </a>
 
-            <div className="timeline-item right">
-              <div className="timeline-content">
-                <h3 className="timeline-degree">Lycée Abi Abass Sebti</h3>
-                <p className="timeline-institution">Baccalauriat Sciences Physique</p>
-                <span className="timeline-duration">2020-2021</span>
-              </div>
-            </div>
-          </div>
-        </section>
+    <a
+      href="https://med.unistra.fr/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="education-card"
+    >
+      <img src={logoStrasbourg} alt="Faculté de Médecine Strasbourg" className="edu-logo" />
+      <h3>Faculté de Médecine Strasbourg</h3>
+      <p>L1 SPS - Spé Physique</p>
+      <span>2021 - 2022</span>
+    </a>
+
+    <div className="education-card">
+      <h3>Lycée Abi Abass Sebti</h3>
+      <p>Baccalauréat Sciences Physiques</p>
+      <span>2020 - 2021</span>
+    </div>
+  </div>
+</section>
+
+
         <section id="portfolio" className="section portfolio-section">
           <h1 className="section-title">Portfolio</h1>
           <h2 className="section-subtitle">My projects</h2>
@@ -291,7 +312,7 @@ function App() {
                 <div className="certification-content">
                   <h3>Hackathon "orientalHack 1.0"</h3>
                     <p>ENCG Oujda</p>
-                      <a href="/ess.pdf" target="_blank" rel="noopener noreferrer" className="certification-link">Voir le certificat →</a>
+                      <a href="/ess.pdf" target="_blank" rel="noopener noreferrer" className="certification-link">Certificate of Achievement →</a>
                 </div>
             </div>
              <div className="certification-card">
@@ -299,15 +320,15 @@ function App() {
                 <div className="certification-content">
                   <h3>Girl in ICT "Public speech"</h3>
                     <p>Majal Berkane</p>
-                      <a href="/ict.pdf" target="_blank" rel="noopener noreferrer" className="certification-link">Voir le certificat →</a>
+                      <a href="/ict.pdf" target="_blank" rel="noopener noreferrer" className="certification-link">Certificate of Achievement →</a>
                 </div>
             </div>
              <div className="certification-card">
               <img src={esisa} alt="Project 2" className="portfolio-image" />              
                 <div className="certification-content">
-                  <h3>Esisa Senio developpers Hackathon</h3>
+                  <h3>Esisa Senior developpers Hackathon</h3>
                     <p>Esisa Fes</p>
-                      <a href="/esisa.pdf" target="_blank" rel="noopener noreferrer" className="certification-link">Voir le certificat →</a>
+                      <a href="/esisa.pdf" target="_blank" rel="noopener noreferrer" className="certification-link">Certificate of Achievement →</a>
                 </div>
             </div>
 
@@ -315,43 +336,48 @@ function App() {
           </div>
         </section>   
         <section id="experiences" className="section experience-section">
-          <h1 className="section-title">Experiences</h1>
-          <h2 className="section-subtitle">Professional Journey & Key Experiences</h2>
+  <h1 className="section-title">Experiences</h1>
+  <h2 className="section-subtitle">Professional Journey & Key Experiences</h2>
 
-          <div className="education-timeline">
-            <div className="timeline-item left">
-              <div className="timeline-content">
-                <h3 className="timeline-title">Commune de Tanger</h3>
-                <p className="timeline-duration">July 2025 - August 2025</p>
-                <p className="timeline-description">
-                  Development of a Public Lighting Mobile Application.
-                </p>
-              </div>
-            </div>
+  <div className="experience-grid">
+    <article className="experience-card">
+      <h3>
+        Commune de Tanger 
+        <img src={logoCommuneTanger} alt="Commune de Tanger Logo" className="experience-logo" />
+      </h3>
+      <time className="experience-date">July 2025 - August 2025</time>
+      <p>Development of a Public Lighting Mobile Application.</p>
+    </article>
 
-            <div className="timeline-item right">
-              <div className="timeline-content">
-                <h3 className="timeline-title">Activ Digital</h3>
-                <p className="timeline-duration">April 2024 - June 2024</p>
-                <p className="timeline-description">Development of a Human Resources Management Application</p>
-              </div>
-            </div>
-            <div className="timeline-item left">
-              <div className="timeline-content">
-                <h3 className="timeline-title">ESTF</h3>
-                <p className="timeline-duration">October 2023 - April 2024</p>
-                <p className="timeline-description">Hotel Reservation Management Platform</p>
-              </div>
-            </div>
-            <div className="timeline-item right">
-              <div className="timeline-content">
-                <h3 className="timeline-title">D3 Soft</h3>
-                <p className="timeline-duration">June 2023 - July 2023</p>
-                <p className="timeline-description">Development of a Payment Management Application</p>
-              </div>
-            </div>
-          </div>
-        </section>
+    <article className="experience-card">
+      <h3>
+        Activ Digital 
+        <img src={logoActivDigital} alt="Activ Digital Logo" className="experience-logo" />
+      </h3>
+      <time className="experience-date">April 2024 - June 2024</time>
+      <p>Development of a Human Resources Management Application</p>
+    </article>
+
+    <article className="experience-card">
+      <h3>
+        ESTF 
+        <img src={logoESTF} alt="ESTF Logo" className="experience-logo" />
+      </h3>
+      <time className="experience-date">October 2023 - April 2024</time>
+      <p>Hotel Reservation Management Platform</p>
+    </article>
+
+    <article className="experience-card">
+      <h3>
+        D3 Soft 
+        <img src={logoD3Soft} alt="D3 Soft Logo" className="experience-logo" />
+      </h3>
+      <time className="experience-date">June 2023 - July 2023</time>
+      <p>Development of a Payment Management Application</p>
+    </article>
+  </div>
+</section>
+
 
         <section id="contact" className="section contact-section">
         <h1 className="section-title">Contact</h1>
